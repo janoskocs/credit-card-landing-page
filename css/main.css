@@ -4,4 +4,137 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+#hero {
+  height: 100vh;
+}
+
+#hero nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.25em;
+}
+
+#hero nav img {
+  width: 64px;
+}
+
+#hero nav ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero nav ul li {
+  list-style: none;
+}
+
+#hero nav ul li a {
+  text-decoration: none;
+  color: #a5a5a5;
+  font-size: 1em;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#hero nav ul li a:hover {
+  color: #7249bf;
+}
+
+#hero nav ul li a:hover {
+  color: #7249bf;
+}
+
+#hero #hero-text {
+  font-size: 1.46667em;
+  text-transform: uppercase;
+  padding: 2.2em;
+}
+
+#hero #hero-text span {
+  font-family: "Titillium Web", sans-serif;
+  color: #a5a5a5;
+}
+
+#hero #hero-text h1 {
+  font-family: "Oswald", sans-serif;
+  color: #7249bf;
+}
+
+#hero #hero-text p {
+  text-transform: none;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#hero #hero-text a {
+  text-decoration: none;
+  color: #f1a246;
+  font-size: 1em;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#hero #hero-text a:hover {
+  color: #ffc254;
+}
+
+#hero #hero-text button {
+  margin-top: 2.2em;
+}
+
+#hero #hero-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2.2em;
+}
+
+#hero #hero-features .feature {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+#hero #hero-features .feature img {
+  width: 64px;
+}
+
+#hero .cta-btn {
+  background-color: #98477f;
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+  padding: 0 1.2em 0 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#hero .cta-btn:hover {
+  background-color: #b65598;
+}
 /*# sourceMappingURL=main.css.map */

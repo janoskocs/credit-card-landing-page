@@ -6,3 +6,98 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#hero {
+    height: 100vh;
+    //background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(../img/hero.jpg);
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+
+        padding: $standard;
+
+        img {
+            width: 64px;
+        }
+
+        ul {
+            width: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            li {
+                list-style: none;
+
+                a {
+                    @include anchor-tag($span-grey, 1em, uppercase, $main-color);
+
+
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    //NAV
+    #hero-text {
+        font-size: $large/1.5;
+        text-transform: uppercase;
+        padding: $large;
+
+        span {
+            font-family: $para-font;
+            color: $span-grey;
+        }
+
+        h1 {
+            font-family: $header-font;
+            color: $main-color
+        }
+
+        p {
+            text-transform: none;
+            font-family: $para-font;
+        }
+
+        a {
+            @include anchor-tag($yellow, 1em, none, $yellow*1.2)
+        }
+
+        button {
+            margin-top: $large;
+        }
+
+    }
+
+    //HERO-TEXT
+
+    #hero-features {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: $large;
+
+        .feature {
+            @include feature-cards();
+            color: #fff;
+
+            img {
+                width: 64px;
+
+            }
+        }
+    }
+
+    .cta-btn {
+        @include cta-btn($purple, 1em);
+    }
+}
+
+//#HERO ENDS HERE

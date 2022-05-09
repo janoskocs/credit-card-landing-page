@@ -1,0 +1,36 @@
+//STANDARD ANCHOR TAGS
+
+@mixin anchor-tag($font-color, $font-size, $uppercase, $hover-color) {
+    text-decoration: none;
+    color: $font-color;
+    font-size: $font-size;
+    font-family: $para-font;
+    text-transform: $uppercase;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
+@mixin cta-btn($bg-color, $font-size) {
+    background-color: $bg-color;
+    font-size: $font-size;
+    font-family: $header-font;
+    padding: 0 1.2em 0 1.2em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: $bg-color*1.2;
+    }
+}
+
+@mixin feature-cards() {
+    font-family: $para-font;
+    text-align: center;
+}
