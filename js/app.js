@@ -49,9 +49,15 @@ loanCalcMonths();
 
 //MODAL WINDOW
 const modal = document.querySelector("#credit-card-modal");
-const btn = document.querySelector("#apply");
+const btn = document.querySelectorAll(".credit-card-modal");
 const span = document.getElementsByClassName("close")[0];
-btn.onclick = function () {
+btn[0].onclick = function () {
+    modal.style.display = "block";
+}
+btn[1].onclick = function () {
+    modal.style.display = "block";
+}
+btn[2].onclick = function () {
     modal.style.display = "block";
 }
 
