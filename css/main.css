@@ -434,4 +434,223 @@ footer .footer-box p {
   font-family: "Titillium Web", sans-serif;
   color: #2701a6;
 }
+
+#credit-card-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  overflow: hidden;
+}
+
+.modal-content {
+  margin: 5% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #98477f;
+  float: right;
+  padding: 5px;
+  font-size: 52px;
+  font-weight: bold;
+  background-color: #f1a246;
+  border-radius: 2px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75vw;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#selection .box {
+  position: relative;
+  top: -75px;
+  width: 300px;
+  background: #fff;
+  padding: 3rem;
+  -webkit-box-shadow: 0px 0px 15px grey;
+          box-shadow: 0px 0px 15px grey;
+  border-radius: 2.5px;
+  color: #7249bf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#selection .box p {
+  font-family: "Titillium Web", sans-serif;
+  color: #535353;
+}
+
+#selection .box ul {
+  list-style: none;
+}
+
+#selection .box ul li {
+  padding: 10px;
+  color: #535353;
+  font-family: "Titillium Web", sans-serif;
+}
+
+#selection .box:first-child {
+  border-top: 10px solid #f1a246;
+}
+
+#selection .box:first-child h3 {
+  color: #f1a246;
+  font-family: "Oswald", sans-serif;
+}
+
+#selection .box:first-child li::before {
+  content: "\2022";
+  color: #f1a246;
+  display: inline-block;
+  width: 2em;
+  margin-left: -1.2em;
+}
+
+#selection .box:first-child button {
+  background-color: #f1a246;
+  font-size: 1.25em;
+  font-family: "Oswald", sans-serif;
+  padding: 0 1.2em 0 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#selection .box:first-child button:hover {
+  background-color: #ffc254;
+}
+
+#selection .box:nth-child(2) {
+  border-top: 10px solid #2701a6;
+}
+
+#selection .box:nth-child(2) h3 {
+  color: #2701a6;
+  font-family: "Oswald", sans-serif;
+}
+
+#selection .box:nth-child(2) li::before {
+  content: "\2022";
+  color: #2701a6;
+  display: inline-block;
+  width: 2em;
+  margin-left: -1.2em;
+}
+
+#selection .box:nth-child(2) button {
+  background-color: #2701a6;
+  font-size: 1.25em;
+  font-family: "Oswald", sans-serif;
+  padding: 0 1.2em 0 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#selection .box:nth-child(2) button:hover {
+  background-color: #2f01c7;
+}
+
+#selection .box:nth-child(3) {
+  border-top: 10px solid #98477f;
+}
+
+#selection .box:nth-child(3) h3 {
+  font-family: "Oswald", sans-serif;
+  color: #98477f;
+}
+
+#selection .box:nth-child(3) li::before {
+  content: "\2022";
+  color: #98477f;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+}
+
+#selection .box:nth-child(3) button {
+  background-color: #98477f;
+  font-size: 1.25em;
+  font-family: "Oswald", sans-serif;
+  padding: 0 1.2em 0 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#selection .box:nth-child(3) button:hover {
+  background-color: #b65598;
+}
+
+#selection .box .price {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  justify-items: end;
+  margin: 1em 0em 1em 0em;
+}
+
+#selection .box .price .pound {
+  font-size: 0.5em;
+  position: relative;
+  top: -10px;
+  left: 8px;
+}
 /*# sourceMappingURL=main.css.map */

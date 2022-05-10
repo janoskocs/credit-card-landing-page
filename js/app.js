@@ -16,8 +16,8 @@ const calculateMonthlyPayments = (loanAmount, loanMonths) => {
 loanAmountSlider.step = 100;
 loanAmountSlider.addEventListener('input', loanCalc);
 loanMonthsSlider.addEventListener('input', loanCalcMonths);
-loanAmountInput.addEventListener('input', updateInput);
-loanAmountMonthsInput.addEventListener('input', updateInputMonths);
+//loanAmountInput.addEventListener('input', updateInput);
+//loanAmountMonthsInput.addEventListener('input', updateInputMonths);
 
 
 function loanCalc() {
@@ -47,3 +47,20 @@ function loanCalcMonths() {
 loanCalc();
 loanCalcMonths();
 
+//MODAL WINDOW
+const modal = document.querySelector("#credit-card-modal");
+const btn = document.querySelector("#apply");
+const span = document.getElementsByClassName("close")[0];
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

@@ -26,14 +26,14 @@
 
     <section id="hero">
         <nav>
-            <img src="img/flamingocreditlogonew128.png" alt="Logo of Flamingo Credit">
+            <a href="../index.html"><img src="img/flamingocreditlogonew128.png" alt="Logo of Flamingo Credit"></a>
             <ul>
                 <li><a href="pages/aboutus.html">About</a></li>
                 <li><a href="pages/cards.html">Cards</a></li>
                 <li><a href="pages/credit.html">Get Credit</a></li>
                 <li><a href="pages/cuservice.html">Customer Service</a></li>
             </ul>
-            <button class="cta-btn">Apply for a card</button>
+            <button class="cta-btn" id="apply">Apply for a card</button>
         </nav>
 
         <div id="hero-text">
@@ -177,7 +177,63 @@
         </div>
     </footer>
 
+    <div id="credit-card-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
 
+            <div id="selection">
+                <div class="box">
+                    <h3>Charge Card</h3>
+                    <p>Never worry about overspending your limit. Top up every month and you're good to go!</p>
+                    <ul>
+                        <li>Build your credit</li>
+                        <li>Free of charge</li>
+                        <li>Buyer's insurance</li>
+                    </ul>
+                    <div>
+                        <div class="price"><span class="pound">£</span> 0/mo</div>
+                        <button>Get started</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>Rose Gold Cashback Credit Card</h3>
+                    <p>Get the best everyday purchase credit card. It offers amazing discounts and cashback on every
+                        purchase. Never leave the house without it.</p>
+
+                    <ul>
+                        <li>Cashback on every purchase</li>
+                        <li>Discounts on big brands</li>
+                        <li>Travel Insurance</li>
+                    </ul>
+                    <div>
+                        <div class="price"><span class="pound">£</span> 2.99/mo</div>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+
+                <div class="box">
+
+                    <h3>Flamingo Go World Class Elite</h3>
+                    <p>This credit card offers exclusive benefits such as a personal travel advisor and stylist. It can
+                        help you book the next holiday and you don't have to worry about the details.</p>
+                    <ul>
+                        <li>Personal stylist</li>
+                        <li>Book holidays just by making a call</li>
+                        <li>VIP</li>
+
+                    </ul>
+                    <div>
+                        <div class="price">Let's Talk</div>
+                        <button>Get Started</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js" async defer></script>
 </body>
 
 </html>
