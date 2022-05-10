@@ -193,3 +193,45 @@
         }
     }
 }
+
+//#OFFERS AND UPDATES
+
+#loan-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $large;
+}
+
+//#LOAN-CALCULATOR
+
+
+#last-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: url(../img/last-cta.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-size: $large;
+
+    padding: $large;
+
+    h2 {
+        font-family: $header-font;
+        color: #fff;
+
+    }
+
+    p {
+        font-family: $para-font;
+        color: #fff;
+    }
+
+    button {
+        margin-top: $standard;
+        @include cta-btn($main-color, 1em);
+    }
+}

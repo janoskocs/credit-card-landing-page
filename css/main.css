@@ -252,4 +252,65 @@
 #offers-updates .offers-container .offers-box a:hover {
   color: #945ff8;
 }
+
+#loan-calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.2em;
+}
+
+#last-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(../img/last-cta.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 2.2em;
+  padding: 2.2em;
+}
+
+#last-cta h2 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+#last-cta p {
+  font-family: "Titillium Web", sans-serif;
+  color: #fff;
+}
+
+#last-cta button {
+  margin-top: 1.25em;
+  background-color: #7249bf;
+  font-size: 1em;
+  font-family: "Oswald", sans-serif;
+  padding: 0 1.2em 0 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#last-cta button:hover {
+  background-color: #8958e5;
+}
 /*# sourceMappingURL=main.css.map */
