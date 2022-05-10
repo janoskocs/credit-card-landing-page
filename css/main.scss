@@ -107,3 +107,36 @@
 }
 
 //#HERO ENDS HERE
+
+#currencies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $large;
+
+    font-family: $header-font;
+    font-size: $standard;
+    font-weight: lighter;
+
+    h2 {
+        color: $main-color
+    }
+
+    p {
+        letter-spacing: $letter-space-standard;
+        ;
+    }
+
+    .currency-list {
+        margin-top: $large;
+
+        h3 {
+            display: inline;
+            margin: $large;
+            font-size: $large;
+            color: $purple
+        }
+    }
+}
+
+//#CURRENCIES

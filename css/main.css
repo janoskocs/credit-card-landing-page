@@ -150,4 +150,40 @@
 #hero .cta-btn:hover {
   background-color: #b65598;
 }
+
+#currencies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.2em;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25em;
+  font-weight: lighter;
+}
+
+#currencies h2 {
+  color: #7249bf;
+}
+
+#currencies p {
+  letter-spacing: 1.5px;
+}
+
+#currencies .currency-list {
+  margin-top: 2.2em;
+}
+
+#currencies .currency-list h3 {
+  display: inline;
+  margin: 2.2em;
+  font-size: 2.2em;
+  color: #98477f;
+}
 /*# sourceMappingURL=main.css.map */
