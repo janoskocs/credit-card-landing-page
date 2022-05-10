@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 #hero {
@@ -118,8 +117,10 @@
     font-size: $standard;
     font-weight: lighter;
 
+
     h2 {
-        color: $main-color
+        color: $main-color;
+        text-transform: uppercase;
     }
 
     p {
@@ -140,3 +141,55 @@
 }
 
 //#CURRENCIES
+#offers-updates {
+    background-color: $span-grey*1.3;
+    padding: $large;
+    background: rgb(39, 1, 166);
+    background: linear-gradient(90deg, rgba(39, 1, 166, 0.5) 0%, rgba(152, 71, 127, 10.5) 35%, rgba(241, 72, 70, 0.5) 80%);
+
+    h2 {
+        font-family: $header-font;
+        color: #fff;
+        text-align: center;
+        font-size: $large;
+        letter-spacing: $letter-space-standard;
+        text-transform: uppercase;
+    }
+
+    .offers-para {
+        font-family: $para-font;
+        color: #fff;
+        text-align: center;
+        letter-spacing: $letter-space-standard;
+        margin: $standard;
+    }
+
+    .offers-container {
+        display: flex;
+        justify-content: space-around;
+
+        .offers-box {
+            margin: $standard;
+            width: 300px;
+            //border: 1px solid $span-grey;
+            font-family: $para-font;
+            padding-bottom: $standard;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px $span-grey;
+
+            img {
+                width: 300px;
+            }
+
+            p {
+                padding: $standard;
+            }
+
+            a {
+                margin: $standard;
+                @include anchor-tag($purple, $standard, uppercase, $main-color*1.3);
+            }
+        }
+    }
+}
