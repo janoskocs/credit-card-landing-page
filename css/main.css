@@ -132,8 +132,8 @@
 }
 
 #hero .cta-btn {
-  background-color: #98477f;
-  font-size: 1em;
+  background-color: #f1a246;
+  font-size: 1.2em;
   font-family: "Oswald", sans-serif;
   padding: 0 1.2em 0 1.2em;
   text-transform: uppercase;
@@ -146,7 +146,7 @@
 }
 
 #hero .cta-btn:hover {
-  background-color: #b65598;
+  background-color: #ffc254;
 }
 
 #currencies {
@@ -319,6 +319,24 @@
   display: block;
   margin: 0 0 2.2em 0;
   width: 400px;
+}
+
+#loan-calculator button {
+  background-color: #7249bf;
+  font-size: 2em;
+  font-family: "Oswald", sans-serif;
+  padding: 0 1.2em 0 1.2em;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#loan-calculator button:hover {
+  background-color: #8958e5;
 }
 
 #last-cta {
