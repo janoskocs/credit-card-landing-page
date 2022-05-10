@@ -20,56 +20,6 @@
           justify-content: space-between;
 }
 
-#hero nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
-  padding: 1.25em;
-}
-
-#hero nav img {
-  width: 64px;
-}
-
-#hero nav ul {
-  width: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#hero nav ul li {
-  list-style: none;
-}
-
-#hero nav ul li a {
-  text-decoration: none;
-  color: #a5a5a5;
-  font-size: 1em;
-  font-family: "Titillium Web", sans-serif;
-  text-transform: uppercase;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-#hero nav ul li a:hover {
-  color: #7249bf;
-}
-
-#hero nav ul li a:hover {
-  color: #7249bf;
-}
-
 #hero #hero-text {
   font-size: 1.46667em;
   text-transform: uppercase;
@@ -147,6 +97,56 @@
 
 #hero .cta-btn:hover {
   background-color: #ffc254;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.25em;
+}
+
+nav img {
+  width: 64px;
+}
+
+nav ul {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #a5a5a5;
+  font-size: 1em;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #7249bf;
+}
+
+nav ul li a:hover {
+  color: #7249bf;
 }
 
 #currencies {

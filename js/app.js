@@ -46,3 +46,4 @@ function loanCalcMonths() {
 
 loanCalc();
 loanCalcMonths();
+

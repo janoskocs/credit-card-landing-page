@@ -15,38 +15,6 @@
     flex-direction: column;
     justify-content: space-between;
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        width: 80%;
-        margin: 0 auto;
-
-        padding: $standard;
-
-        img {
-            width: 64px;
-        }
-
-        ul {
-            width: 40%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            li {
-                list-style: none;
-
-                a {
-                    @include anchor-tag($span-grey, 1em, uppercase, $main-color);
-
-
-                    &:hover {
-                        color: $main-color;
-                    }
-                }
-            }
-        }
-    }
 
     //NAV
     #hero-text {
@@ -102,6 +70,39 @@
 
     .cta-btn {
         @include cta-btn($yellow, 1.2em);
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+
+    padding: $standard;
+
+    img {
+        width: 64px;
+    }
+
+    ul {
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        li {
+            list-style: none;
+
+            a {
+                @include anchor-tag($span-grey, 1em, uppercase, $main-color);
+
+
+                &:hover {
+                    color: $main-color;
+                }
+            }
+        }
     }
 }
 
@@ -325,3 +326,5 @@ footer {
         }
     }
 }
+
+//FOOTER
