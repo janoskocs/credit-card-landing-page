@@ -9,7 +9,12 @@
 
 #hero {
     height: 100vh;
-    //background: linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(../img/hero.jpg);
+    background: url(../img/hero1280new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     nav {
         display: flex;
@@ -48,7 +53,7 @@
     #hero-text {
         font-size: $large/1.5;
         text-transform: uppercase;
-        padding: $large;
+        padding-left: $large*3;
 
         span {
             font-family: $para-font;
@@ -82,7 +87,8 @@
         justify-content: space-between;
         width: 80%;
         margin: 0 auto;
-        margin-top: $large;
+
+        padding-bottom: $large;
 
         .feature {
             @include feature-cards();
