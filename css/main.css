@@ -297,7 +297,7 @@
 
 #last-cta button {
   margin-top: 1.25em;
-  background-color: #7249bf;
+  background-color: #f1a246;
   font-size: 1em;
   font-family: "Oswald", sans-serif;
   padding: 0 1.2em 0 1.2em;
@@ -311,6 +311,50 @@
 }
 
 #last-cta button:hover {
-  background-color: #8958e5;
+  background-color: #ffc254;
+}
+
+footer {
+  background-color: #a5a5a5;
+  color: #fff;
+  padding: 2.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer img {
+  width: 96px;
+}
+
+footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  margin-left: 1.25em;
+}
+
+footer .footer-box h3 {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+footer .footer-box a {
+  text-decoration: none;
+  color: #2701a6;
+  font-size: 1em;
+  font-family: "Titillium Web", sans-serif;
+  text-transform: capitalise;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+footer .footer-box a:hover {
+  color: #4e02ff;
 }
 /*# sourceMappingURL=main.css.map */

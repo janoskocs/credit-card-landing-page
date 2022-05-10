@@ -232,6 +232,37 @@
 
     button {
         margin-top: $standard;
-        @include cta-btn($main-color, 1em);
+        @include cta-btn($yellow, 1em);
+    }
+}
+
+//#LAST-CTA
+
+footer {
+    background-color: $span-grey;
+    color: #fff;
+    padding: $large;
+
+    display: flex;
+
+    img {
+        width: 96px;
+    }
+
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+
+        margin-left: $standard;
+
+        h3 {
+            font-family: $header-font;
+            letter-spacing: $letter-space-standard;
+        }
+
+        a {
+            @include anchor-tag($blue, 1em, capitalise, $blue*2)
+        }
     }
 }
