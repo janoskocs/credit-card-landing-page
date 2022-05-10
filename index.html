@@ -26,7 +26,7 @@
 
     <section id="hero">
         <nav>
-            <img src="img/flamingocreditlogo250.png" alt="Logo of Flamingo Credit">
+            <img src="img/flamingocreditlogonew128.png" alt="Logo of Flamingo Credit">
             <ul>
                 <li><a href="pages/aboutus.html">About</a></li>
                 <li><a href="pages/cards.html">Cards</a></li>
@@ -103,7 +103,39 @@
         <h2>With Flamingo Credit, you will always know what to expect...</h2>
         <h2>Loan calculator</h2>
 
-        <p>LOAN CALCULATOR HERE!</p>
+        <div id="calculator">
+            <div class="calculator-side">
+                <p>How much would you like to borrow?</p>
+                <p>Enter a value between 1,000 and 25,000.</p>
+                <input type="text" name="loan-amount" id="loan-amount" value="1000">
+                <input type="range" id="loan-amount-slider" name="loan-amount-slider" min="1000" max="25000">
+                <hr>
+                <p>How many months?</p>
+                <p>Enter a value between 12 and 60.</p>
+
+                <input type="text" name="loan-amount-months" id="loan-amount-months" value="12">
+                <input type="range" id="loan-amount-months-slider" name="loan-amount-slider-months-slider" min="12"
+                    max="60">
+            </div>
+            <div class="calculator-side">
+                <div>
+                    <p>Total amount payable:</p>
+                    <p id="amount-payable">GBP 1,000</p>
+                </div>
+
+                <div>
+                    <p>Monthly repayment:</p>
+                    <p id="monthly-repayment">GBP 1,000</p>
+                </div>
+
+                <div>
+                    <p>Representative</p>
+                    <p>12% APR</p>
+                </div>
+            </div>
+        </div>
+
+        <button>Apply</button>
     </section>
 
     <section id="last-cta">
@@ -114,7 +146,7 @@
 
     <footer>
 
-        <img src="./img/flamingocreditlogo250.png" alt="Logo of Flamingo Credit.">
+        <img src="./img/flamingocreditlogonew128.png" alt="Logo of Flamingo Credit.">
         <div class="footer-box">
             <h3>About us</h3>
             <a href="">About us</a>
@@ -126,6 +158,22 @@
             <h3>Support</h3>
             <a href="">Help</a>
             <a href="">Contact us</a>
+        </div>
+        <div class="footer-box">
+            <h3>Where to find us</h3>
+            <p>London, United Kingdom</p>
+        </div>
+        <div class="footer-box">
+            <h3>Call us</h3>
+            <p>0800 123 456 789</p>
+            <p>Mon-Friday: 08:00 - 17:00</p>
+            <p>Sat-Sun: Closed</p>
+        </div>
+        <div class="footer-box">
+            <h3>Do you like this website?</h3>
+            <p>Let's work together!</p>
+            <p>Contact me: contact@janoskocs.com</p>
+            <a href="https://janoskocs.com">janoskocs.com</a>
         </div>
     </footer>
     <script src="" async defer></script>

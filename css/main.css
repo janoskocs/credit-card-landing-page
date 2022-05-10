@@ -267,6 +267,60 @@
   margin: 2.2em;
 }
 
+#loan-calculator h2 {
+  font-family: "Oswald", sans-serif;
+  color: #7249bf;
+  text-transform: uppercase;
+  font-size: 2.2em;
+}
+
+#loan-calculator p {
+  color: #373737;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+#loan-calculator #calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#loan-calculator #calculator .calculator-side {
+  width: 450px;
+}
+
+#loan-calculator #calculator .calculator-side div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 4.4em;
+}
+
+#loan-calculator #calculator .calculator-side div p:last-of-type {
+  font-size: 2.2em;
+}
+
+#loan-calculator #calculator .calculator-side [type="text"] {
+  padding: 0.7em;
+  font-size: 1.25em;
+  font-family: "Titillium Web", sans-serif;
+  display: block;
+  margin: 2.2em auto;
+}
+
+#loan-calculator #calculator .calculator-side [type="range"] {
+  display: block;
+  margin: 0 0 2.2em 0;
+  width: 400px;
+}
+
 #last-cta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,7 +389,7 @@ footer .footer-box {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 200px;
+  width: 250px;
   margin-left: 1.25em;
 }
 
@@ -356,5 +410,10 @@ footer .footer-box a {
 
 footer .footer-box a:hover {
   color: #4e02ff;
+}
+
+footer .footer-box p {
+  font-family: "Titillium Web", sans-serif;
+  color: #2701a6;
 }
 /*# sourceMappingURL=main.css.map */

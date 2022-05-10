@@ -201,6 +201,54 @@
     flex-direction: column;
     align-items: center;
     margin: $large;
+
+    h2 {
+        font-family: $header-font;
+        color: $main-color;
+        text-transform: uppercase;
+        font-size: $large;
+    }
+
+    p {
+        color: $span-grey/3;
+        font-family: $para-font;
+        letter-spacing: $letter-space-standard;
+    }
+
+    #calculator {
+        display: flex;
+
+
+        .calculator-side {
+            width: 450px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                margin: $large*2;
+
+                p:last-of-type {
+                    font-size: $large;
+                }
+            }
+
+            [type="text"] {
+                padding: $small;
+                font-size: $standard;
+                font-family: $para-font;
+                display: block;
+                margin: $large auto;
+            }
+
+            [type="range"] {
+                display: block;
+                margin: 0 0 $large 0;
+                width: 400px;
+            }
+        }
+
+    }
 }
 
 //#LOAN-CALCULATOR
@@ -252,7 +300,7 @@ footer {
     .footer-box {
         display: flex;
         flex-direction: column;
-        width: 200px;
+        width: 250px;
 
         margin-left: $standard;
 
@@ -263,6 +311,11 @@ footer {
 
         a {
             @include anchor-tag($blue, 1em, capitalise, $blue*2)
+        }
+
+        p {
+            font-family: $para-font;
+            color: $blue;
         }
     }
 }
