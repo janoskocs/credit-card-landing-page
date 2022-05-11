@@ -293,6 +293,32 @@ nav {
         margin-top: $standard;
         @include cta-btn($yellow, 1em);
     }
+
+    form {
+        padding: $large;
+        background-color: #fff;
+        margin: $small;
+        font-family: $para-font;
+        color: $span-grey/2;
+
+        display: flex;
+        flex-direction: column;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                width: 250px;
+                padding: $small;
+                margin: $small;
+                font-size: $small;
+
+            }
+        }
+
+    }
 }
 
 //#BIG-CTA
@@ -597,5 +623,46 @@ footer {
         }
 
 
+    }
+}
+
+//CUSTOMER SERVICE SECTION ENDS HERE
+
+//CARDS SECTION
+#cards {
+    width: 960px;
+    margin: 0 auto;
+
+    .about-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        border-bottom: 1px solid $span-grey;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        img {
+            max-width: 30%;
+        }
+
+        div {
+            width: 300px;
+
+            h2 {
+                font-family: $header-font;
+                font-size: $large;
+                color: $main-color;
+
+            }
+
+            p {
+                font-family: $para-font;
+                color: $span-grey/2;
+                letter-spacing: $letter-space-standard;
+            }
+        }
     }
 }

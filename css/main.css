@@ -387,6 +387,41 @@ nav ul li a:hover {
   background-color: #ffc254;
 }
 
+#big-cta form {
+  padding: 2.2em;
+  background-color: #fff;
+  margin: 0.7em;
+  font-family: "Titillium Web", sans-serif;
+  color: #535353;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#big-cta form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#big-cta form div input {
+  width: 250px;
+  padding: 0.7em;
+  margin: 0.7em;
+  font-size: 0.7em;
+}
+
 footer {
   background-color: #a5a5a5;
   color: #fff;
@@ -757,5 +792,46 @@ footer .footer-box p {
 #customer-service #faqs .question-container .active:after {
   content: "\2796";
   /* Unicode character for "minus" sign (-) */
+}
+
+#cards {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#cards .about-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+#cards .about-card:last-of-type {
+  border-bottom: none;
+}
+
+#cards .about-card img {
+  max-width: 30%;
+}
+
+#cards .about-card div {
+  width: 300px;
+}
+
+#cards .about-card div h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2em;
+  color: #7249bf;
+}
+
+#cards .about-card div p {
+  font-family: "Titillium Web", sans-serif;
+  color: #535353;
+  letter-spacing: 1.5px;
 }
 /*# sourceMappingURL=main.css.map */
