@@ -81,7 +81,7 @@
   width: 64px;
 }
 
-#hero .cta-btn {
+.cta-btn {
   background-color: #f1a246;
   font-size: 1.2em;
   font-family: "Oswald", sans-serif;
@@ -95,7 +95,7 @@
   transition: 0.3s ease;
 }
 
-#hero .cta-btn:hover {
+.cta-btn:hover {
   background-color: #ffc254;
 }
 
@@ -272,6 +272,7 @@ nav ul li a:hover {
   color: #7249bf;
   text-transform: uppercase;
   font-size: 2.2em;
+  margin-bottom: 1.25em;
 }
 
 #loan-calculator p {
@@ -339,7 +340,7 @@ nav ul li a:hover {
   background-color: #8958e5;
 }
 
-#last-cta {
+#big-cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -353,21 +354,21 @@ nav ul li a:hover {
   background: url(../img/last-cta.png);
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: 2.2em;
+  font-size: 1.25em;
   padding: 2.2em;
 }
 
-#last-cta h2 {
+#big-cta h2 {
   font-family: "Oswald", sans-serif;
   color: #fff;
 }
 
-#last-cta p {
+#big-cta p {
   font-family: "Titillium Web", sans-serif;
   color: #fff;
 }
 
-#last-cta button {
+#big-cta button {
   margin-top: 1.25em;
   background-color: #f1a246;
   font-size: 1em;
@@ -382,7 +383,7 @@ nav ul li a:hover {
   transition: 0.3s ease;
 }
 
-#last-cta button:hover {
+#big-cta button:hover {
   background-color: #ffc254;
 }
 
@@ -652,5 +653,109 @@ footer .footer-box p {
   position: relative;
   top: -10px;
   left: 8px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.header img {
+  width: 164px;
+}
+
+.header h1 {
+  font-family: "Oswald", sans-serif;
+  color: #f1a246;
+  margin: 0.7em;
+  font-size: 2.2em;
+}
+
+.header p {
+  font-family: "Titillium Web", sans-serif;
+  color: #535353;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.25em;
+}
+
+#customer-service #faqs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.2em;
+}
+
+#customer-service #faqs .question-container {
+  border: 1px solid #535353;
+  margin: 0.7em;
+  width: 450px;
+  text-align: center;
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Style the collapsible content. Note: hidden by default */
+}
+
+#customer-service #faqs .question-container p {
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1.5px;
+  padding: 1.25em;
+}
+
+#customer-service #faqs .question-container .question-btn {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+#customer-service #faqs .question-container .active,
+#customer-service #faqs .question-container .question-btn:hover {
+  background-color: #ccc;
+}
+
+#customer-service #faqs .question-container .answer {
+  display: none;
+  overflow: hidden;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+#customer-service #faqs .question-container .question-btn:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+#customer-service #faqs .question-container .active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
 }
 /*# sourceMappingURL=main.css.map */

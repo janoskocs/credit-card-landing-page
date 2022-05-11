@@ -68,9 +68,11 @@
         }
     }
 
-    .cta-btn {
-        @include cta-btn($yellow, 1.2em);
-    }
+
+}
+
+.cta-btn {
+    @include cta-btn($yellow, 1.2em);
 }
 
 nav {
@@ -208,12 +210,14 @@ nav {
         color: $main-color;
         text-transform: uppercase;
         font-size: $large;
+        margin-bottom: $standard;
     }
 
     p {
         color: $span-grey/3;
         font-family: $para-font;
         letter-spacing: $letter-space-standard;
+
     }
 
     #calculator {
@@ -261,7 +265,7 @@ nav {
 //#LOAN-CALCULATOR
 
 
-#last-cta {
+#big-cta {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,7 +274,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 
-    font-size: $large;
+    font-size: $standard;
 
     padding: $large;
 
@@ -291,7 +295,7 @@ nav {
     }
 }
 
-//#LAST-CTA
+//#BIG-CTA
 
 footer {
     background-color: $span-grey;
@@ -492,6 +496,106 @@ footer {
                 left: 8px;
             }
         }
+
+    }
+}
+
+// MODAL FOR CREDIT CARDS 
+
+//CUSTOMER SERVICE PAGE
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+
+    img {
+        width: 164px;
+    }
+
+    h1 {
+        font-family: $header-font;
+        color: $yellow;
+        margin: $small;
+        font-size: $large;
+    }
+
+    p {
+        font-family: $para-font;
+        color: $span-grey/2;
+        letter-spacing: $letter-space-standard;
+        margin-bottom: $standard;
+    }
+}
+
+#customer-service {
+    #faqs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: $large;
+
+        .question-container {
+            border: 1px solid $span-grey/2;
+            margin: $small;
+            width: 450px;
+            text-align: center;
+
+
+            p {
+                font-family: $para-font;
+                letter-spacing: $letter-space-standard;
+                padding: $standard;
+            }
+
+            .question-btn {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+            }
+
+            /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+            .active,
+            .question-btn:hover {
+                background-color: #ccc;
+            }
+
+            /* Style the collapsible content. Note: hidden by default */
+            .answer {
+                display: none;
+                overflow: hidden;
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+
+            .question-btn:after {
+                content: '\02795';
+                /* Unicode character for "plus" sign (+) */
+                font-size: 13px;
+                color: white;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active:after {
+                content: "\2796";
+                /* Unicode character for "minus" sign (-) */
+            }
+
+        }
+
 
     }
 }
