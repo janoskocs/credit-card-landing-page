@@ -832,6 +832,24 @@ footer {
             }
         }
     }
+
+    #cards {
+        width: 100%;
+
+        .about-card {
+            flex-direction: column;
+
+            div {
+                margin: $large;
+
+
+            }
+
+            &:nth-child(2) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 760px) {

@@ -969,6 +969,24 @@ footer #footer-container .footer-box p {
     display: block;
     width: 300px;
   }
+  #cards {
+    width: 100%;
+  }
+  #cards .about-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #cards .about-card div {
+    margin: 2.2em;
+  }
+  #cards .about-card:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 760px) {
