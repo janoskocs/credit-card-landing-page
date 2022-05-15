@@ -57,16 +57,16 @@
 
 #hero #hero-text button {
   margin-top: 2.2em;
+  margin-bottom: 2.2em;
 }
 
 #hero #hero-features {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
   padding-bottom: 2.2em;
 }
@@ -901,6 +901,104 @@ footer #footer-container .footer-box p {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  nav .cta-btn {
+    display: none;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  nav ul li {
+    padding: 0.5em;
+  }
+  nav ul li a {
+    color: #535353;
+    font-size: 1.3em;
+  }
+  #hero-features {
+    margin: 2.2em auto 0 auto;
+    padding: 2.2em;
+    background-color: #7249bf;
+  }
+  #hero-features .feature {
+    display: block;
+  }
+  #currencies {
+    margin-top: 7em;
+  }
+  #offers-updates .offers-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #loan-calculator {
+    text-align: center;
+    font-size: 1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #loan-calculator #calculator .calculator-side {
+    width: auto;
+  }
+  #loan-calculator #calculator .calculator-side div {
+    margin: 0;
+  }
+  #loan-calculator #calculator .calculator-side [type="range"] {
+    width: 200px;
+  }
+  footer #footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer #footer-container img {
+    display: none;
+  }
+  footer #footer-container .footer-box {
+    display: block;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #hero-features {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+  }
+  #hero-features .feature {
+    width: 80%;
+  }
+  #currencies {
+    margin-top: 25em;
+    text-align: center;
+  }
+  #loan-calculator #calculator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #loan-calculator #calculator .calculator-side div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer #footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=main.css.map */
