@@ -330,31 +330,40 @@ footer {
 
     display: flex;
 
-    img {
-        width: 96px;
-    }
 
-    .footer-box {
+
+    #footer-container {
         display: flex;
-        flex-direction: column;
-        width: 250px;
+        width: 80%;
+        margin: 0 auto;
 
-        margin-left: $standard;
-
-        h3 {
-            font-family: $header-font;
-            letter-spacing: $letter-space-standard;
+        img {
+            height: 96px;
         }
 
-        a {
-            @include anchor-tag($blue, 1em, capitalise, $blue*2);
-        }
+        .footer-box {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
 
-        p {
-            font-family: $para-font;
-            color: $blue;
+            margin-left: $standard;
+
+            h3 {
+                font-family: $header-font;
+                letter-spacing: $letter-space-standard;
+            }
+
+            a {
+                @include anchor-tag($blue, 1em, capitalise, $blue*2);
+            }
+
+            p {
+                font-family: $para-font;
+                color: $blue;
+            }
         }
     }
+
 }
 
 //FOOTER
@@ -669,6 +678,7 @@ footer {
     }
 }
 
+//Live chat pop up 
 /* Popup container */
 .popup {
     position: relative;
