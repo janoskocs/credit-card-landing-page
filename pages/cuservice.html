@@ -30,6 +30,7 @@
             <li><a href="../index.html">Back to homepage</a></li>
         </ul>
         <button class="cta-btn">Apply for a card</button>
+
     </nav>
 
     <section id="customer-service">
@@ -43,7 +44,12 @@
             <h2>Get in touch with us via live chat!</h2>
             <p>Our agents are there to help you.</p>
             <p>Mon-Fri: 08:00-17:00</p>
-            <button class="credit-card-modal" disabled>Start Live Chat</button>
+            <div class="popup chat-pop-up">
+                <span class="popuptext">There are no agents available.</span>
+            </div>
+
+            <button id="live-chat-btn">Start Live Chat</button>
+
         </section>
         <div id="faqs">
             <div class="question-container">
@@ -112,6 +118,7 @@
         </div>
     </footer>
     <script src="../js/faqs.js" async defer></script>
+    <script src="../js/popups.js" async defer></script>
 </body>
 
 </html>
