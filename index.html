@@ -137,8 +137,11 @@
                 </div>
             </div>
         </div>
-
-        <button>Apply</button>
+        <div class="popup chat-pop-up">
+            <span class="popuptext">We are unable to offer credit services at the moment. Apologies for any
+                inconveniences.</span>
+        </div>
+        <button id="apply-for-loan-btn">Apply</button>
     </section>
 
     <section id="big-cta">
@@ -238,8 +241,10 @@
             </div>
         </div>
     </div>
-
+    <button id="live-chat-btn" style="display: none;"></button>
+    <!--This button is a placeholder so that I am able to combine popups.js to avoid errors.-->
     <script src="./js/app.js" async defer></script>
+    <script src="./js/popups.js" async defer></script>
 </body>
 
 </html>
