@@ -1,13 +1,12 @@
-let loanAmountSlider = document.querySelector('#loan-amount-slider');
-let loanMonthsSlider = document.querySelector('#loan-amount-months-slider');
-let loanAmountInput = document.querySelector('#loan-amount');
-let loanAmountMonthsInput = document.querySelector('#loan-amount-months');
+let loanAmountSlider = document.querySelector('#loanAmountSlider');
+let loanMonthsSlider = document.querySelector('#loanAmountMonthsSlider');
+let loanAmountInput = document.querySelector('#loanAmount');
+let loanAmountMonthsInput = document.querySelector('#loanAmountMonths');
 
 const resultAmountPayable = document.querySelector('#amount-payable');
 const resultMonthlyPayable = document.querySelector('#monthly-repayment');
 
 const apr = 12;
-
 
 const calculateMonthlyPayments = (loanAmount, loanMonths) => {
     let interest = (loanAmount / 100) * apr;
@@ -21,12 +20,14 @@ loanMonthsSlider.addEventListener('input', loanCalcMonths);
 
 
 function loanCalc() {
+
     let inputLoan = Math.floor(parseInt(loanAmountSlider.value));
     let inputMonths = Math.floor(parseInt(loanMonthsSlider.value));
     let interest = (inputLoan / 100) * apr;
     let monthlyPayments = (inputLoan + interest) / inputMonths;
 
-    loanAmountInput.value = inputLoan;
+    //loanAmountInput.value = inputLoan;
+
     resultAmountPayable.innerText = `GBP ${inputLoan + interest}`;
 
     resultMonthlyPayable.innerText = `GBP ${Math.round(monthlyPayments)}`
@@ -39,7 +40,7 @@ function loanCalcMonths() {
     let interest = (inputLoan / 100) * apr;
     let monthlyPayments = (inputLoan + interest) / inputMonths;
 
-    loanAmountMonthsInput.value = inputMonths;
+    //loanAmountMonthsInput.value = inputMonths;
     resultMonthlyPayable.innerText = `GBP ${Math.round(monthlyPayments)}`
 }
 
