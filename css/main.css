@@ -23,7 +23,7 @@
 #hero #hero-text {
   font-size: 1.46667em;
   text-transform: uppercase;
-  padding-left: 6.6em;
+  padding: 2.2em 0 0 2.2em;
 }
 
 #hero #hero-text span {
@@ -749,7 +749,7 @@ footer #footer-container .footer-box p {
 #customer-service #faqs .question-container {
   border: 1px solid #535353;
   margin: 0.7em;
-  width: 450px;
+  width: 60%;
   text-align: center;
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   /* Style the collapsible content. Note: hidden by default */
@@ -1017,6 +1017,9 @@ footer #footer-container .footer-box p {
   footer #footer-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  #customer-service #faqs .question-container {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=main.css.map */

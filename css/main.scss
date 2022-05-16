@@ -20,7 +20,7 @@
     #hero-text {
         font-size: $large/1.5;
         text-transform: uppercase;
-        padding-left: $large*3;
+        padding: $large 0 0 $large;
 
         span {
             font-family: $para-font;
@@ -580,7 +580,7 @@ footer {
         .question-container {
             border: 1px solid $span-grey/2;
             margin: $small;
-            width: 450px;
+            width: 60%;
             text-align: center;
 
 
@@ -784,6 +784,7 @@ footer {
 
     }
 
+
     #currencies {
         margin-top: 7em;
 
@@ -862,6 +863,8 @@ footer {
         }
     }
 
+
+
     #currencies {
         margin-top: 25em;
         text-align: center;
@@ -891,4 +894,13 @@ footer {
             flex-wrap: wrap;
         }
     }
+
+    #customer-service {
+        #faqs {
+            .question-container {
+                width: 90%;
+            }
+        }
+    }
+
 }
